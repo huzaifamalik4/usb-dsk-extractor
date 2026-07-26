@@ -1,0 +1,15 @@
+Example 1: Extract from an image with no partition table (superfloppy)
+> python usb_dsk_extractor.py backup.dsk extracted_data
+
+Example 2: Extract from an image with a valid partition table
+> python usb_dsk_extractor.py backup.dsk output_folder
+
+Example 3: Extract and also carve deleted files from free space
+> python usb_dsk_extractor.py backup.dsk output_folder --carve
+
+Example 4: Specify a custom output directory
+> python usb_dsk_extractor.py "D:\USB Backup.dsk" "E:\recovered_files"
+
+Example 5: Use via pip-installed command
+> pip install .
+> usb-dsk-extractor backup.dsk output
